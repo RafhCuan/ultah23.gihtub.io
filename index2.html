@@ -32,12 +32,12 @@
             position: relative;
             transition: transform 0.5s;
         }
-        .countdown-container {
+                .countdown-container {
             position: absolute;
-            top: 10px;
-            right: 10px;
-            width: 80px;
-            height: 80px;
+            top: 5px;
+            right: 5px;
+            width: 60px;
+            height: 60px;
         }
         .progress-ring {
             transform: rotate(-90deg);
@@ -47,9 +47,9 @@
         .progress-ring circle {
             fill: transparent;
             stroke: #ff77a9;
-            stroke-width: 8;
-            stroke-dasharray: 251.2; /* Keliling lingkaran (2 * π * radius) */
-            stroke-dashoffset: 251.2; /* Awalnya penuh */
+            stroke-width: 6;
+            stroke-dasharray: 188.4; /* Keliling lingkaran (2 * π * radius) */
+            stroke-dashoffset: 188.4; /* Awalnya penuh */
             transition: stroke-dashoffset 1s linear;
         }
         .countdown-text {
@@ -57,7 +57,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 1rem;
+            font-size: 0.8rem;
             color: #8a4b66;
         }
         .button {
