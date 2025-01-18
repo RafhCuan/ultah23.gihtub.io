@@ -7,34 +7,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'bunge', serif;
+            font-family: 'Playfair Display', serif;
             text-align: center;
             background: linear-gradient(to bottom, #ffe0f0, #ffccd9);
             padding: 20px;
             color: #5a3d55;
+            margin: 0;
         }
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 60px;
+            font-size: 3rem;
             color: #c2185b;
             margin-bottom: 15px;
         }
         .card {
             margin: 30px auto;
             padding: 20px;
-            width: 300px;
+            max-width: 90%;
             background: #fff0f5;
             border-radius: 15px;
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-            font-size: 24px;
+            font-size: 1.5rem;
             color: #4a2c43;
             transition: transform 0.5s;
         }
         .button {
             background: #ff77a9;
             color: white;
-            padding: 14px 30px;
-            font-size: 20px;
+            padding: 12px 24px;
+            font-size: 1rem;
             border: none;
             border-radius: 15px;
             cursor: pointer;
@@ -44,29 +45,33 @@
         .button:hover {
             background: #ff6395;
         }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .card {
+                font-size: 1.2rem;
+            }
+            .button {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
+        }
+
         @media (max-width: 480px) {
-        h1 {
-            font-size: 40px;
+            h1 {
+                font-size: 2rem;
+            }
+            .card {
+                padding: 15px;
+                font-size: 1rem;
+            }
+            .button {
+                font-size: 0.8rem;
+                padding: 8px 16px;
+            }
         }
-        p, .quote-box {
-            font-size: 18px;
-        }
-        .button, .back-button {
-            font-size: 18px;
-            padding: 10px 20px;
-        }
-        .game button {
-            font-size: 18px;
-            padding: 10px;
-        }
-        .heart, #balloon {
-            font-size: 60px;
-        }
-        .card {
-            width: 80px;
-            height: 100px;
-        }
-    }
 
     </style>
 </head>
@@ -85,106 +90,106 @@
             "Bersamamu, aku menemukan definisi kebahagiaan.",
             "Cinta kita seperti hujan, segar dan tiada akhir.",
             "Senandung hatiku adalah namamu.",
-            "Kamu adalah alasan aku tersenyum setiap hari,"
-            "Di matamu, aku menemukan kedamaian,"
-            "Cintaku padamu tumbuh setiap detik yang berlalu,"
-            "Hanya denganmu, aku merasa lengkap,"
-            "Kamu adalah bab terbaik dalam cerita hidupku,"
-            "Setiap hari bersamamu adalah berkah,"
-            "Dalam pelukanmu, aku menemukan rumah,"
-            "Aku mencintaimu lebih dari kata-kata bisa menggambarkan,"
-            "Bersamamu, semua mimpi terasa mungkin,"
-            "Kamu adalah alasan aku percaya pada cinta sejati,"
-            "Hati ini milikmu, sekarang dan selamanya,"
-            "Kamu adalah cahaya di hari-hariku yang gelap,"
-            "Setiap senyummu adalah musik di telingaku,"
-            "Aku akan mencintaimu bahkan saat waktu berhenti,"
-            "Kamu adalah keajaiban yang aku syukuri setiap hari,"
-            "Cintamu adalah hadiah terindah dalam hidupku,"
-            "Aku jatuh cinta padamu setiap hari,"
-            "Kamu adalah alasan aku ingin menjadi lebih baik,"
-            "Kehadiranmu membuat dunia ini lebih indah,"
-            "Dalam hatiku, hanya ada kamu,"
-            "Cintaku padamu seperti langit, tak berujung,"
-            "Kamu adalah mimpi yang menjadi nyata,"
-            "Pelukanmu adalah tempat favoritku,"
-            "Aku ingin menghabiskan sisa hidupku bersamamu,"
-            "Kamu adalah bagian terbaik dari hariku,"
-            "Setiap detik tanpamu terasa hampa,"
-            "Aku mencintaimu lebih dari yang bisa aku ungkapkan,"
-            "Cintamu adalah energi yang membuatku terus berjalan,"
-            "Aku ingin menjadi alasan senyummu,"
-            "Kamu adalah cinta pertama dan terakhirku,"
-            "Aku tak bisa membayangkan hidup tanpa kamu,"
-            "Bersamamu, aku merasa tak terkalahkan,"
-            "Aku ingin menghabiskan setiap matahari terbenam bersamamu,"
-            "Cintamu adalah keajaiban yang membuatku utuh,"
-            "Kamu adalah pelangi setelah badai di hidupku,"
-            "Aku mencintaimu tanpa syarat,"
-            "Bersamamu, aku menemukan arti hidup yang sebenarnya,"
-            "Aku ingin menjadi tempatmu pulang,"
-            "Kamu adalah alasan aku percaya pada keajaiban,"
-            "Cintamu adalah obat bagi hatiku,"
-            "Aku beruntung bisa memanggilmu milikku,"
-            "Setiap hari, aku jatuh cinta padamu lagi,"
-            "Kamu adalah inspirasiku untuk menjadi lebih baik,"
-            "Cintamu adalah harta karunku yang paling berharga,"
-            "Aku ingin membuatmu bahagia selamanya,"
-            "Aku mencintaimu lebih dari kata-kata bisa mengungkapkan,"
-            "Kamu adalah semesta kecil di hidupku,"
-            "Aku tak akan pernah lelah mencintaimu,"
-            "Bersamamu, aku merasa lebih hidup,"
-            "Kamu adalah matahariku yang menerangi setiap hari,"
-            "Cintaku padamu seperti laut, tak bertepi,"
-            "Kamu membuat segalanya terasa lebih baik,"
-            "Aku ingin memelukmu selamanya,"
-            "Kamu adalah kebahagiaan dalam hidupku,"
-            "Aku merasa beruntung memiliki kamu,"
-            "Kamu adalah jawaban atas semua doaku,"
-            "Aku mencintaimu lebih dari yang bisa aku bayangkan,"
-            "Cintamu adalah hadiah terindah,"
-            "Kamu membuat dunia ini terasa lebih cerah,"
-            "Aku ingin mencintaimu di setiap kehidupan,"
-            "Kamu adalah lagu di hatiku,"
-            "Aku akan selalu berada di sisimu,"
-            "Kamu adalah kebahagiaan yang selalu aku cari,"
-            "Aku ingin menjadi penyemangatmu selamanya,"
-            "Setiap saat bersamamu adalah anugerah,"
-            "Aku ingin membuatmu tersenyum setiap hari,"
-            "Kamu adalah alasanku bertahan,"
-            "Cintamu adalah cahaya yang menerangi jalanku,"
-            "Aku mencintaimu lebih dari bintang mencintai malam,"
-            "Kamu adalah alasan aku bangun setiap pagi,"
-            "Dalam hatiku, hanya ada kamu,"
-            "Aku tak akan pernah lelah mencintaimu,"
-            "Kamu adalah mentari di hatiku,"
-            "Bersamamu, aku menemukan arti cinta sejati,"
-            "Cintamu adalah udara yang aku hirup,"
-            "Aku ingin menghabiskan setiap malam bersamamu,"
-            "Kamu adalah inspirasiku untuk bertumbuh,"
-            "Aku mencintaimu dengan seluruh hatiku,"
-            "Kamu adalah hadiah terbaik dalam hidupku,"
-            "Cintamu adalah pelita dalam kegelapan,"
-            "Bersamamu, aku merasa sempurna,"
-            "Kamu adalah harmoni dalam hidupku,"
-            "Aku akan mencintaimu sampai akhir waktu,"
-            "Kamu adalah bagian terbaik dari diriku,"
-            "Aku bersyukur setiap hari memiliki kamu,"
-            "Kamu adalah mimpi indahku yang menjadi nyata,"
-            "Aku ingin menjadi pelindungmu selamanya,"
-            "Cintamu adalah cahaya dalam hidupku,"
-            "Aku tak bisa berhenti mencintaimu,"
-            "Kamu membuat hidupku lebih berarti,"
-            "Aku mencintaimu lebih dari apa pun,"
-            "Kamu adalah alasanku bertahan di saat sulit,"
-            "Bersamamu, aku menemukan kebahagiaan sejati,"
-            "Kamu adalah cinta abadiku,"
-            "Aku ingin menghabiskan setiap momen bersamamu,"
-            "Cintamu adalah keajaiban yang tak tergantikan,"
-            "Kamu membuat segalanya terasa sempurna,"
-            "Aku mencintaimu tanpa akhir,"
-            "Kamu adalah alasan aku percaya pada cinta sejati,"
-            "Aku bersyukur karena memiliki kamu di hidupku,"
+            "Kamu adalah alasan aku tersenyum setiap hari.",
+            "Di matamu, aku menemukan kedamaian.",
+            "Cintaku padamu tumbuh setiap detik yang berlalu.",
+            "Hanya denganmu, aku merasa lengkap.",
+            "Kamu adalah bab terbaik dalam cerita hidupku.",
+            "Setiap hari bersamamu adalah berkah.",
+            "Dalam pelukanmu, aku menemukan rumah.",
+            "Aku mencintaimu lebih dari kata-kata bisa menggambarkan.",
+            "Bersamamu, semua mimpi terasa mungkin.",
+            "Kamu adalah alasan aku percaya pada cinta sejati.",
+            "Hati ini milikmu, sekarang dan selamanya.",
+            "Kamu adalah cahaya di hari-hariku yang gelap.",
+            "Setiap senyummu adalah musik di telingaku.",
+            "Aku akan mencintaimu bahkan saat waktu berhenti.",
+            "Kamu adalah keajaiban yang aku syukuri setiap hari.",
+            "Cintamu adalah hadiah terindah dalam hidupku.",
+            "Aku jatuh cinta padamu setiap hari.",
+            "Kamu adalah alasan aku ingin menjadi lebih baik.",
+            "Kehadiranmu membuat dunia ini lebih indah.",
+            "Dalam hatiku, hanya ada kamu.",
+            "Cintaku padamu seperti langit, tak berujung.",
+            "Kamu adalah mimpi yang menjadi nyata.",
+            "Pelukanmu adalah tempat favoritku.",
+            "Aku ingin menghabiskan sisa hidupku bersamamu.",
+            "Kamu adalah bagian terbaik dari hariku.",
+            "Setiap detik tanpamu terasa hampa.",
+            "Aku mencintaimu lebih dari yang bisa aku ungkapkan.",
+            "Cintamu adalah energi yang membuatku terus berjalan.",
+            "Aku ingin menjadi alasan senyummu.",
+            "Kamu adalah cinta pertama dan terakhirku.",
+            "Aku tak bisa membayangkan hidup tanpa kamu.",
+            "Bersamamu, aku merasa tak terkalahkan.",
+            "Aku ingin menghabiskan setiap matahari terbenam bersamamu.",
+            "Cintamu adalah keajaiban yang membuatku utuh.",
+            "Kamu adalah pelangi setelah badai di hidupku.",
+            "Aku mencintaimu tanpa syarat.",
+            "Bersamamu, aku menemukan arti hidup yang sebenarnya.",
+            "Aku ingin menjadi tempatmu pulang.",
+            "Kamu adalah alasan aku percaya pada keajaiban.",
+            "Cintamu adalah obat bagi hatiku.",
+            "Aku beruntung bisa memanggilmu milikku.",
+            "Setiap hari, aku jatuh cinta padamu lagi.",
+            "Kamu adalah inspirasiku untuk menjadi lebih baik.",
+            "Cintamu adalah harta karunku yang paling berharga.",
+            "Aku ingin membuatmu bahagia selamanya.",
+            "Aku mencintaimu lebih dari kata-kata bisa mengungkapkan.",
+            "Kamu adalah semesta kecil di hidupku.",
+            "Aku tak akan pernah lelah mencintaimu.",
+            "Bersamamu, aku merasa lebih hidup.",
+            "Kamu adalah matahariku yang menerangi setiap hari.",
+            "Cintaku padamu seperti laut, tak bertepi.",
+            "Kamu membuat segalanya terasa lebih baik.",
+            "Aku ingin memelukmu selamanya.",
+            "Kamu adalah kebahagiaan dalam hidupku.",
+            "Aku merasa beruntung memiliki kamu.",
+            "Kamu adalah jawaban atas semua doaku.",
+            "Aku mencintaimu lebih dari yang bisa aku bayangkan.",
+            "Cintamu adalah hadiah terindah.",
+            "Kamu membuat dunia ini terasa lebih cerah.",
+            "Aku ingin mencintaimu di setiap kehidupan.",
+            "Kamu adalah lagu di hatiku.",
+            "Aku akan selalu berada di sisimu.",
+            "Kamu adalah kebahagiaan yang selalu aku cari.",
+            "Aku ingin menjadi penyemangatmu selamanya.",
+            "Setiap saat bersamamu adalah anugerah.",
+            "Aku ingin membuatmu tersenyum setiap hari.",
+            "Kamu adalah alasanku bertahan.",
+            "Cintamu adalah cahaya yang menerangi jalanku.",
+            "Aku mencintaimu lebih dari bintang mencintai malam.",
+            "Kamu adalah alasan aku bangun setiap pagi.",
+            "Dalam hatiku, hanya ada kamu.",
+            "Aku tak akan pernah lelah mencintaimu.",
+            "Kamu adalah mentari di hatiku.",
+            "Bersamamu, aku menemukan arti cinta sejati.",
+            "Cintamu adalah udara yang aku hirup.",
+            "Aku ingin menghabiskan setiap malam bersamamu.",
+            "Kamu adalah inspirasiku untuk bertumbuh.",
+            "Aku mencintaimu dengan seluruh hatiku.",
+            "Kamu adalah hadiah terbaik dalam hidupku.",
+            "Cintamu adalah pelita dalam kegelapan.",
+            "Bersamamu, aku merasa sempurna.",
+            "Kamu adalah harmoni dalam hidupku.",
+            "Aku akan mencintaimu sampai akhir waktu.",
+            "Kamu adalah bagian terbaik dari diriku.",
+            "Aku bersyukur setiap hari memiliki kamu.",
+            "Kamu adalah mimpi indahku yang menjadi nyata.",
+            "Aku ingin menjadi pelindungmu selamanya.",
+            "Cintamu adalah cahaya dalam hidupku.",
+            "Aku tak bisa berhenti mencintaimu.",
+            "Kamu membuat hidupku lebih berarti.",
+            "Aku mencintaimu lebih dari apa pun.",
+            "Kamu adalah alasanku bertahan di saat sulit.",
+            "Bersamamu, aku menemukan kebahagiaan sejati.",
+            "Kamu adalah cinta abadiku.",
+            "Aku ingin menghabiskan setiap momen bersamamu.",
+            "Cintamu adalah keajaiban yang tak tergantikan.",
+            "Kamu membuat segalanya terasa sempurna.",
+            "Aku mencintaimu tanpa akhir.",
+            "Kamu adalah alasan aku percaya pada cinta sejati.",
+            "Aku bersyukur karena memiliki kamu di hidupku."
         ];
 
         function showRandomQuote() {
@@ -196,4 +201,3 @@
     </script>
 </body>
 </html>
-
