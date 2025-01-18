@@ -31,6 +31,11 @@
             color: #4a2c43;
             transition: transform 0.5s;
         }
+        .countdown {
+            font-size: 1rem;
+            color: #8a4b66;
+            margin-top: 10px;
+        }
         .button {
             background: #ff77a9;
             color: white;
@@ -79,6 +84,7 @@
     <h1>Kata-Kata Romantis</h1>
     <div id="quoteCard" class="card">
         <p id="quoteText">Aku mencintaimu lebih dari kata-kata yang bisa kuungkap.</p>
+        <p id="countdown" class="countdown">Kutipan akan berubah dalam 10 detik...</p>
     </div>
     <button class="button" onclick="location.href='index.html'">Kembali ke Halaman Utama</button>
 
@@ -192,12 +198,25 @@
             "Aku bersyukur karena memiliki kamu di hidupku."
         ];
 
+        let countdownTime = 10; // Hitungan mundur awal dalam detik
+
         function showRandomQuote() {
             const randomIndex = Math.floor(Math.random() * quotes.length);
             document.getElementById('quoteText').innerText = quotes[randomIndex];
+            countdownTime = 10; // Reset hitungan mundur setiap kali kutipan berubah
         }
 
-        setInterval(showRandomQuote, 10000); // Perbarui kata setiap 10 detik (10000 ms)
+        function updateCountdown() {
+            const countdownElement = document.getElementById('countdown');
+            countdownElement.innerText = `Kutipan akan berubah dalam ${countdownTime} detik...`;
+            if (countdownTime > 0) {
+                countdownTime--;
+            } else {
+                showRandomQuote();
+            }
+        }
+
+        setInterval(updateCountdown, 1000); // Perbarui hitungan mundur setiap detik // Perbarui kata setiap 10 detik (10000 ms)
     </script>
 </body>
 </html>
