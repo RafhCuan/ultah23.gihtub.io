@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun, Cintaku!</title>
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+            padding: 20px;
+            color: #5a3d55;
+            margin: 0;
+        }
+        h1 {
+            font-size: 55px;
+            color: #b22222;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+            line-height: 1.8;
+        }
+        .heart {
+            font-size: 90px;
+            color: crimson;
+            animation: beat 1.5s infinite;
+        }
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.4);
+            }
+        }
+        .button {
+            background-color: #e75480;
+            color: white;
+            padding: 12px 24px;
+            font-size: 20px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            margin-top: 20px;
+            box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+        }
+        .button:hover {
+            background-color: #ff69b4;
+        }
+        .game {
+            margin-top: 25px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        .game button {
+            padding: 10px 20px;
+            margin: 7px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .game-message {
+            font-size: 20px;
+            color: #ff4081;
+            margin-top: 12px;
+        }
+        #balloon {
+            font-size: 55px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        #balloon:hover {
+            transform: scale(1.1);
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .card {
+            width: 100px;
+            height: 140px;
+            perspective: 1000px;
+        }
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .card.is-flipped .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-front {
+            background-color: #ffccd5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        .card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Menjaga proporsi gambar agar tidak terdistorsi */
+    border-radius: 10px; /* Menambahkan sudut melengkung agar serasi dengan card */
+}
+
+        .card-back {
+            background-image: url('https://via.placeholder.com/100x140?text=Foto+Berdua');
+            background-size: cover;
+            transform: rotateY(180deg);
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 45px;
+            }
+            p {
+                font-size: 18px;
+            }
+            .button {
+                font-size: 18px;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+  <h1 style="font-size: 70px; color: #b30e0e; text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2);">Selamat Ulang Tahun, Sayangkuuu yang cantik dan imut!!</h1>
+    <div class="heart" style="font-size: 120px; color: #e91e63;">❤️</div>
+    <p style="font-family: 'Playfair Display', serif; font-size: 24px; margin: 12px 0; color: #4a2c43;">Hari ini adalah hari yang penuh cinta,</p>
+    <p style="font-family: 'Playfair Display', serif; font-size: 24px; margin: 12px 0; color: #4a2c43;">Seperti setiap detik yang kuhabiskan bersamamu.</p>
+    <p style="font-family: 'Playfair Display', serif; font-size: 24px; margin: 12px 0; color: #4a2c43;">Semoga kebahagiaanmu tak pernah pudar,</p>
+    <p style="font-family: 'Playfair Display', serif; font-size: 24px; margin: 12px 0; color: #4a2c43;">Dan semoga cintaku selalu membuatmu tersenyum.</p>
+    <p style="font-family: 'Playfair Display', serif; font-size: 24px; margin: 12px 0; color: #4a2c43;">Kamu adalah cahaya dalam gelapku, pelangi setelah hujanku,</p>
+    <p style="font-family: 'Playfair Display', serif; font-size: 24px; margin: 12px 0; color: #4a2c43;">Dan aku bersyukur bisa memanggilmu cintaku.</p>
+
+
+    <button class="button" onclick="revealSurprise()">Buka Hadiah Cinta</button>
+
+    <div id="surprise" style="display: none; margin-top: 20px;">
+        <p><strong>Happy Birthday, bidadariku yang tercantik!</strong></p>
+        <p>🎂🌟✨</p>
+        <p>Aku berjanji akan selalu ada di setiap langkahmu.</p>
+        <p>Kamu adalah segala alasan hatiku berdebar.</p>
+        <audio id="birthdaySong" src="https://www.bensound.com/bensound-music/bensound-love.mp3" preload="auto"></audio>
+    </div>
+
+    <div class="game">
+        <p>Cari tahu seberapa besar cintaku dengan memilih angka keberuntunganmu!</p>
+        <button onclick="playGame(1)">1</button>
+        <button onclick="playGame(2)">2</button>
+        <button onclick="playGame(3)">3</button>
+        <button onclick="playGame(4)">4</button>
+        <div id="gameMessage" class="game-message"></div>
+    </div>
+
+    <div class="game">
+        <p>Coba tangkap hatiku yang melompat-lompat!</p>
+        <div id="jumpingHeart" style="font-size: 80px; cursor: pointer;">💖</div>
+        <div id="catchMessage" class="game-message"></div>
+    </div>
+
+    <div class="game">
+        <p>Pecahkan balon cinta untuk melihat kejutan manis!</p>
+        <div id="balloon" onclick="popBalloon()">🎈</div>
+        <div id="balloonMessage" class="game-message"></div>
+    </div>
+
+    <div class="game">
+        <p>Balik kartunya untuk melihat kejutan cinta!</p>
+        <div class="card-container">
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">💌</div>
+                    <div class="card-back"><img src="https://i.pinimg.com/736x/80/1d/48/801d485fab349427b5ad2a2a3a0818db.jpg" alt="" srcset=""></div>
+                </div>
+            </div>
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">💌</div>
+                    <div class="card-back"><img src="https://i.pinimg.com/736x/b5/98/7d/b5987d04b1f269969112f75543ca29ad.jpg" alt="" srcset=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function revealSurprise() {
+            document.getElementById('surprise').style.display = 'block';
+            const song = document.getElementById('birthdaySong');
+            song.play();
+        }
+
+        function playGame(choice) {
+            const messages = [
+                "Cintaku padamu seperti angka satu, kamu yang pertama dan tak tergantikan!",
+                "Angka dua untuk kita berdua, selalu bersama selamanya!",
+                "Tiga kata: Aku cinta kamu, selamanya.",
+                "Empat musim cinta kita akan terus berputar tak pernah berhenti."
+            ];
+            document.getElementById('gameMessage').innerText = messages[choice - 1];
+        }
+
+        let heart = document.getElementById('jumpingHeart');
+        let catchMessage = document.getElementById('catchMessage');
+
+        heart.addEventListener('click', function() {
+            catchMessage.innerText = "Kamu berhasil menangkap hatiku! ❤️";
+            heart.style.display = 'none';
+        });
+
+        setInterval(function() {
+            let top = Math.floor(Math.random() * 80) + 10;
+            let left = Math.floor(Math.random() * 80) + 10;
+            heart.style.position = 'absolute';
+            heart.style.top = top + '%';
+            heart.style.left = left + '%';
+        }, 1000);
+
+        function popBalloon() {
+            document.getElementById('balloon').style.display = 'none';
+            document.getElementById('balloonMessage').innerText = "Kamu telah memecahkan balon cinta! Kejutan manis menunggumu setiap hari, cintaku!";
+        }
+
+        function flipCard(card) {
+            card.classList.toggle('is-flipped');
+        }
+    </script>
+</body>
+</html>
